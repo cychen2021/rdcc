@@ -14,4 +14,4 @@ RUN case $(uname -m) in \
     esac
 
 COPY ./install.sh "${PRODUCT_DIR}/install.sh"
-COPY ./instal-uv.sh "${PRODUCT_DIR}/instal-uv.sh"
+COPY ./install-uv.sh "${PRODUCT_DIR}/instal-uv.sh"
