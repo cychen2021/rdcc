@@ -1,0 +1,15 @@
+{
+    "image_name": "rcdd_cxx-llvm-18",
+    "type": "install_component",
+    "image_version": "24.07.0",
+    "products": [
+        {"id": "install.sh", "type": "install_script"},
+        {"id": "install-llvm.sh", "type": "install_payload"},
+        {"id": "install-cmake.sh", "type": "install_payload"}
+    ],
+    "arch": ["x64", "arm64"],
+    "depends_on": [
+        "rcdd_component-base:25.07.0"
+    ],
+    "heavyweight": 1
+}
