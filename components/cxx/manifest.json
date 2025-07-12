@@ -1,0 +1,9 @@
+{
+    "image_name": "cxx",
+    "image_version": "llvm-18",
+    "products": [
+        {"id": "install-tools.sh", "type": "install_script"},
+        {"id": "cmake-x64.sh", "type": "install_payload"},
+        {"id": "cmake-aarch.sh", "type": "install_payload"}
+    ]
+}

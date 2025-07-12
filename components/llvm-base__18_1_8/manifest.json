@@ -1,0 +1,8 @@
+{
+    "image_name": "llvm-base",
+    "image_version": "18.1.8",
+    "products": [
+        {"id": "llvm-build", "type": "direct_copy"},
+        {"id": "llvm-src", "type": "direct_copy"}
+    ]
+}
