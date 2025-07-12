@@ -5,6 +5,6 @@
     "products": [
         {"id": "install.sh", "type": "install_script"}
     ],
-    "arch": ["x64", "aarch64"],
+    "arch": ["x64", "arm64"],
     "heavyweight": 1
 }

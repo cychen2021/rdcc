@@ -1,7 +1,7 @@
 FROM ubuntu:noble AS base
 
-RUN sudo apt-get update && \
-    sudo apt-get install -y \
+RUN apt-get update && \
+    apt-get install -y \
     build-essential \
     git \
     curl \
