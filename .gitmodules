@@ -1,0 +1,4 @@
+[submodule "phdkit"]
+	path = phdkit
+	url = https://github.com/cychen2021/phdkit.git
+	branch = main
