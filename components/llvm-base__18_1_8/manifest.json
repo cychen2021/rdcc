@@ -6,5 +6,8 @@
         {"id": "llvm-build", "type": "direct_copy"},
         {"id": "llvm-src", "type": "direct_copy"}
     ],
+    "depends_on": [
+        "rcdd_component-base:25.07.0"
+    ],
     "heavyweight": 100
 }

@@ -7,6 +7,9 @@
         {"id": "Miniconda3-py313_25.5.1-0.sh", "type": "install_payload"},
         {"id": "install-uv.sh", "type": "install_payload"}
     ],
+    "depends_on": [
+        "rcdd_component-base:25.07.0"
+    ],
     "arch": ["x64", "arm64"],
     "heavyweight": 1
 }

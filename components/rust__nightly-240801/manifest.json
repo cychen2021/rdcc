@@ -5,6 +5,9 @@
     "products": [
         {"id": "install.sh", "type": "install_script"}
     ],
+    "depends_on": [
+        "rcdd_component-base:25.07.0"
+    ],
     "arch": ["x64", "arm64"],
     "heavyweight": 1
 }
