@@ -9,6 +9,5 @@ RUN apt-get update && \
     ca-certificates \
     software-properties-common
 
-RUN mkdir -p /products
-
 ENV PRODUCT_DIR=/products
+RUN mkdir "${PRODUCT_DIR}"

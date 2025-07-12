@@ -15,8 +15,22 @@ RUN sudo apt-get update && \
     ca-certificates \
     software-properties-common
 
-RUN sudo mkdir /extra && \
-    sudo chown vscode:vscode /extra
-
 ENV USER_OPT="/extra"
-ENV SHEL=/usr/bin/zsh
+ENV SHELL=/usr/bin/zsh
+ENV BUILD_DIR="/build"
+
+RUN sudo mkdir ${USER_OPT} && \
+    sudo chown vscode:vscode ${USER_OPT}
+RUN sudo mkdir ${BUILD_DIR} && \
+    sudo chown vscode:vscode ${BUILD_DIR}
+
+WORKDIR ${BUILD_DIR}
+
+RUN bash ./Miniconda3-25.07.0-Linux-0.sh -b -p "${USER_OPT}/miniconda3" && \
+    conda init && \
+    conda config --set auto_update_conda false && \
+    conda config --set changeps1 false && \
+    conda config --set show_channel_urls true
+
+RUN sudo rm -rvf "${BUILD_DIR}/*"
+
