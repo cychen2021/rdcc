@@ -4,5 +4,6 @@
     "products": [
         {"id": "llvm-build", "type": "direct_copy"},
         {"id": "llvm-src", "type": "direct_copy"}
-    ]
+    ],
+    "heavyweight": 100
 }

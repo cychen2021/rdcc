@@ -2,3 +2,7 @@
 	path = phdkit
 	url = https://github.com/cychen2021/phdkit.git
 	branch = main
+[submodule "copilot-instructions"]
+	path = copilot-instructions
+	url = https://github.com/cychen2021/copilot-instructions.git
+	branch = main
