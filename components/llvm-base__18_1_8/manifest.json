@@ -1,5 +1,6 @@
 {
-    "image_name": "llvm-base",
+    "image_name": "rcdd_llvm-base",
+    "type": "cache_component",
     "image_version": "18.1.8",
     "products": [
         {"id": "llvm-build", "type": "direct_copy"},

@@ -1,0 +1,6 @@
+{
+    "image_name": "rcdd_component-base",
+    "type": "base",
+    "image_version": "25.07.0",
+    "arch": ["x64", "aarch64"]
+}

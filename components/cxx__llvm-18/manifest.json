@@ -1,9 +1,10 @@
 {
-    "image_name": "cxx",
+    "image_name": "rcdd_cxx",
+    "type": "install_component",
     "image_version": "llvm-18",
     "products": [
         {"id": "install-tools.sh", "type": "install_script"},
-        {"id": "cmake.sh", "type": "install_payload"},
+        {"id": "cmake.sh", "type": "install_payload"}
     ],
     "arch": ["x64", "aarch64"],
     "heavyweight": 1

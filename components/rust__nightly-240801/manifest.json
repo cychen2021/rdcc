@@ -1,0 +1,10 @@
+{
+    "image_name": "rcdd_rust",
+    "type": "install_component",
+    "image_version": "nightly-240801",
+    "products": [
+        {"id": "install.sh", "type": "install_script"}
+    ],
+    "arch": ["x64", "aarch64"],
+    "heavyweight": 1
+}
