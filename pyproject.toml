@@ -7,7 +7,17 @@ authors = [
     { name = "Chuyang Chen", email = "chuyangchen2018@outlook.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "click>=8.2.1",
+    "tqdm>=4.67.1",
+    "phdkit"
+]
+
+[tool.uv.workspace]
+members = ["phdkit"]
+
+[tool.uv.sources]
+phdkit = { workspace =  true }
 
 [project.scripts]
 rdcc = "rdcc:main"
