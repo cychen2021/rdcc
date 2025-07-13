@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/base:noble
 
-ARG USER=vscode
+ENV USER=vscode
 RUN adduser ${USER} sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
@@ -18,7 +18,7 @@ RUN sudo apt-get update && \
 ENV USER_OPT="/extra"
 ENV SHELL=/usr/bin/zsh
 ENV BUILD_DIR="/build"
-ENV RCDD_PRODUCT_DIR="/product"
+ENV RDCC_PRODUCT_DIR="/products"
 
 RUN sudo mkdir ${USER_OPT} && \
     sudo chown vscode:vscode ${USER_OPT}
